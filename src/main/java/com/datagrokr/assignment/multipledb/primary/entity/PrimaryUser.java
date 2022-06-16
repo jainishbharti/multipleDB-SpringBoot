@@ -9,7 +9,12 @@ public class PrimaryUser {
     private Integer primaryUserId;
     private String primaryUserName;
 
+    public PrimaryUser(Integer primaryUserId, String primaryUserName) {
+        this.primaryUserId = primaryUserId;
+        this.primaryUserName = primaryUserName;
+    }
 
+    public PrimaryUser() {}
 
     public Integer getPrimaryUserId() {
         return primaryUserId;
@@ -27,7 +32,6 @@ public class PrimaryUser {
         this.primaryUserName = primaryUserName;
     }
 
-    public PrimaryUser() {}
 
     public PrimaryUser(String primaryUserName) {
         this.primaryUserName = primaryUserName;
